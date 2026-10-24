@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Fake Job Detector</title></head>
+<body style="font-family:Arial; max-width:600px; margin:50px auto;">
+  <h2>🛡️ Fake Job Detector</h2>
+  <form method="post">
+    <textarea name="jd_text" rows="10" style="width:100%; padding:10px;" placeholder="Job Description yaha paste karo..."></textarea><br><br>
+    <button style="padding:10px 20px; background:black; color:white; border:none; border-radius:5px;">Check Now</button>
+  </form>
 
+  {% if result %}
+    <div style="margin-top:20px; background:#f4f4f4; padding:15px; border-radius:10px;">
+      <h3>Result:</h3>
+      <p style="white-space:pre-wrap;">{{ result }}</p>
+    </div>
+  {% endif %}
+</body>
+</html>
