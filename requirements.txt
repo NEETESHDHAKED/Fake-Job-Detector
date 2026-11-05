@@ -9,3 +9,5 @@ python-docx
 pillow
 requests
 gunicorn
+google-genai
+gunicorn
